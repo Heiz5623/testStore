@@ -1,0 +1,17 @@
+@media (max-width:610px)
+{
+    .giaodien
+    {
+        width: 80%;
+        top: 15%;
+        left: 10%;
+        border: black solid 2px;
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 11;
+        animation: .3s ease-in transY;
+        position: fixed;
+    
+    }
+}

@@ -1,0 +1,77 @@
+.nen{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+    z-index: 4;
+}
+.giaodien{
+    width: 40%;
+    top: 15%;
+    left: 30%;
+    border: black solid 2px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+    animation: 0.5s ease-in transY;
+    position: fixed;
+    text-align: center;
+}
+
+@keyframes transY{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+}
+.in{
+    margin: 5px ;
+    padding: 5px 0px;
+    text-align: center;
+}
+#tenuser{
+    float: right;
+}
+.dangnhap{
+    padding: 5px 15px;
+    background-color: #212529d2;
+    color: white;
+}
+.dangnhap:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footerfrom{
+    margin: 5% ;
+}
+
+.btnclose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.1%;
+    border-bottom-left-radius: 5px;
+}
+.btnclose:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.icon_close{
+    font-size: 25px;
+}
+.icon{
+    margin: 4px;
+    font-size: 25px;
+}
+.icon:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}

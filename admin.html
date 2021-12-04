@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href="adminstyle.css" />
+        <link rel ="stylesheet" href="login.css" />
+        <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+        <script src="admin.js" ></script>
+        <script src="login.js"></script>
+    </head>
+    <body style="margin: 0px">
+        <div style="height: 1500px;" >         
+            <form name="frmain" style="height: 100%; width: 100%;">
+                <div id="top" style="display: flex; text-align: center;">
+                    <a href="./index.html" style="margin: auto;" ><i class="fas fa-store  vitri_nutdangnhap" style="color: white;"></i></a>
+                </div>
+                <div class="giaodien_admin" >
+                <div id="leftmenu">
+                    <ul id="menu">
+                        <li><a href="#" onclick="viewData();">Quản lý users</a></li>
+                        <li><a href="#" onclick="InnerSP()">Quản lý sản phẩm</a></li>
+                        <li><a href="#" onclick="showhoadon();">Quản lý đơn hàng</a></li>
+                        <li><a href="?TK">Thống kê</a></li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <!-- <div class="SP">
+                        <div class="idSP">'+(i+1)+'</div>
+                        <div class="SPimg"><img src="'+obj[i].img+'" alt="" /></div>
+                        <div class="TTSP">
+                            <div class="TenSP">'+obj[i].Name+'</div>
+                            <div class="GiaSP">'+obj[i].price+'</div>
+                        </div>
+                        <div class="btn_SP">
+                            <div class="btnS">
+                                <div class="btn_S" onclick=""><i class="fas fa-pen  " ></i></div>
+                            </div>
+                            <div class="btnClose">
+                                <div class="btn_C" onclick=""><i class="fas fa-trash" ></i></div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+        
+                </div>              
+                <div id="right">
+                    <!-- <div id="FormThemSP" style="display:none ">
+                        <p><label>ID Sản Phẩm: </label>
+                            <input type="text" id="addID" value=""/></p>
+                        <p><label>Tên Sản Phẩm: </label>
+                            <input type="text" id="addName"  value=""/></p>
+                        <p><label>Hãng Sản Phẩm: </label>
+                            <input type="text" id="addHang"  value=""/></p>
+                        <p><label>Giá Sản Phẩm: </label>
+                            <input type="text" id="addPrice"  value=""/></p>
+                        <p><label>Hình ảnh: </label></p>
+                            <input type="file" id="addImg" name="ADDImage" accept="image/png, image/gif, image/jpeg" />
+                            <input type="button" value="Thêm" onclick="getIFSP()" id="addthem"/>
+                        </div> -->
+                </div>
+                <div class="modal_login" style="display: none;">
+                    <div class="nen"></div>
+                    <div class="giaodien">
+                        <div onclick="alertClose();" class="btnclose"><i class="icon_close far fa-times-circle"></i></div>
+                        <h2>CHI TIẾT HÓA ĐƠN</h2>
+                        <div style="color: red;">Tên khách hàng</div>
+                        <div id="chitietten" style="padding-bottom: 2%;"></div>
+                        <div style="color: red;">Số điện thoại</div>
+                        <div id="chitietsdt" style="padding-bottom: 2%;"></div>
+                        <div style="color: red;">Các sản phẩm đã mua</div>
+                        <div id="chitietsp" style="padding-bottom: 2%;"></div>
+                        <div id="tongtien_donhang" style="padding-bottom: 4%;"></div>
+                        <div id="nutxacnhan"></div>
+                        <div style="padding-top: 7%;">HẾT</div>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
+v>
+    </div>
+</body>
+</html>v>
+    </div>
+</body>
+</html>

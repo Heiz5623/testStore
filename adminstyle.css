@@ -1,0 +1,384 @@
+/* * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#top {
+    height: 5%;
+    border: black solid 2px;
+    background: #212529d2 ;    
+    
+} */
+#top{
+    width: 100%;
+    min-height: 5%;
+    position: fixed;
+    z-index: 1;
+    background: #212529d2 ; 
+    border: black solid 2px;
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #212529;
+}
+#top *{ 
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+}
+@media(max-width:768px)
+{
+    #top{
+        width: 100%;
+        min-height: 4%;
+        position: fixed;
+        z-index: 1;
+        background: #212529d2 ; 
+        border: black solid 2px;
+        flex: 3;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: #212529;
+    }
+    #top *{ 
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: auto;
+        display: flex;
+    }
+    #top .vitri_nutdangnhap{
+        font-size: 20px;
+    }
+    #top .vitri_nutdangnhap:hover{
+        font-size: 25px;
+    }
+    #top .vitri_nutdangnhap:active{
+        font-size: 20px;
+    }
+    .giaodien_admin
+    {
+        padding-top: 200px;
+    }
+}
+#top .vitri_nutdangnhap{
+    font-size: 40px;
+}
+#top .vitri_nutdangnhap:hover{
+    font-size: 45px;
+}
+#top .vitri_nutdangnhap:active{
+    font-size: 40px;
+}
+.giaodien_admin
+{
+    padding-top: 4%;
+}
+
+#leftmenu {
+    float: left;
+    width: 16%;
+    position: fixed;
+}
+
+#menu a {
+    text-decoration: none;
+    color:  darkblue;
+    font-size: 20px;
+}
+#menu a{
+    border-top: 1px solid rgba(31, 30, 30, 0.24) ;
+    display: flex;
+    height: auto;
+    line-height: 30px;
+    padding-left: 15px;
+    border-radius: 5px;
+
+    word-wrap: break-word;
+}
+#menu li{ 
+    list-style-type: circle;
+}
+#menu li:hover,#menu li:hover a{
+    background: rgba(255, 60, 0, 0.308);
+    border-radius: 5px;
+}
+#menu li:hover{
+    list-style-type: initial;
+}
+
+#content {
+    float: left;
+    width: 55%;
+    margin-left: 16%;
+    border: rgba(0, 0, 0, 0.349) solid 1px;
+    border-bottom: none;
+}
+
+#right {
+    float: left;
+    width: 29%;
+    height: 100%;
+    position: fixed;
+    top: 75px;
+    right: 0;
+}
+
+/* Sản Phẩm v */
+.SP {
+    width: 100%;
+    height: 100px;
+    border-bottom: rgba(0, 0, 0, 0.26) solid 1px;
+    margin-top: 5px;
+    clear: both;
+}
+.idSP {
+    float: left;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    cursor: default;
+}
+.SPimg {
+    float: left;
+    width: 16%;
+    height: 100%;
+}
+.SPimg img{
+    width: 100%;
+    height: 100%;
+}
+.TTSP{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.TenSP,.GiaSP{
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    text-align: center;
+}
+.btn_SP{
+    float: left;
+    width: 19%;
+    height: 100%;
+}
+.btnS {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.btn_S,.btn_C{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 8px;
+    margin: 30px auto;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn_S {
+    background: deepskyblue;
+    color: red;
+}
+.btnClose {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.btn_C{
+    background: turquoise;
+    color: midnightblue;
+}
+.btn_S:hover,.btn_C:hover{
+    background: red;
+    color: white;
+    transform: scale(1.1 ,1.1);
+}
+.TenSP:hover,.GiaSP:hover,.SPimg img:hover,.idSP:hover{
+    transform: scale(1.2 ,1.2);
+}
+
+#FormThemSP{
+    border: black solid 1px;
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#FormThemSP p{
+    margin-left: 20px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+#FormThemSP input[type=text]{
+    display: block;
+    font-size: 18px;
+    width: 95%;
+}
+#FormThemSP input[type=file]{
+    margin-top: 10px;
+    margin-left: 22px;
+}
+#FormThemSP input[type=button]{
+    margin: 20px auto;
+    margin-left: 40%;
+}
+/* Sản Phẩm ^ */
+
+@media (max-width: 790px) {
+    #menu a {
+    font-size: 19px;
+    }
+    .btn_S,.btn_C{
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .idSP {
+        font-size: 16px;
+    }
+    .TenSP,.GiaSP{
+        font-size: 14px;
+        line-height: 45px;
+    }
+    .SP {
+        height: 90px;
+    }
+}
+@media (max-width: 640px){
+    .SP{
+        height: 80px;
+    }
+    .TenSP,.GiaSP{
+        font-size: 12px;
+        line-height: 40px;
+    }
+    .btn_S,.btn_C{
+        font-size: 12px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 560px) {
+    #menu a {
+    font-size: 18px;
+    }
+    .SP{
+        height: 70px;
+    }
+    .TenSP,.GiaSP{
+        font-size: 10px;
+        line-height: 35px;
+    }
+    .btn_S,.btn_C{
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 450px){
+    #menu a {
+    font-size: 16px;
+    }
+    .TenSP,.GiaSP{
+        font-size: 8px;
+    }
+    .btn_S,.btn_C{
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 360px){
+    #menu a {
+    font-size: 14px;
+    }
+    .TenSP,.GiaSP{
+        font-size: 6px;
+    }
+    .btn_S,.btn_C{
+        font-size: 10px;
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+    }
+}
+.nutxoa_taikhoan{
+    margin: 4px;
+    font-size: 25px;
+}
+.nutxoa_taikhoan:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+@media(max-width:767px)
+{
+    .nutxoa_taikhoan{
+        margin: 1px;
+        font-size: 5px;
+    }
+}
+@media(max-width:414px)
+{
+    #timuser{
+       width: 100px;
+    }
+    #content_admin{
+        width: 200px;
+        font-size: 6px;
+    }
+}
+.right_hoadon
+{
+    text-align: center;
+}
+.nhapngaythang{
+    text-align: center;
+}
+.showchitet{
+    text-align: center;
+}
+.right_user{
+    text-align: center;
+}
+@media(max-width:768px)
+{
+    #content {
+        float: left;
+        margin-top: 10%;
+        width: 55%;
+        margin-left: 16%;
+        border: rgba(0, 0, 0, 0.349) solid 1px;
+        border-bottom: none;
+    }
+    .bang{
+        font-size: 2mm;
+    }
+    .buttonchitiet{
+        font-size: 1mm;
+    }
+}
+@media(max-width:320px)
+{
+    .bang{
+        font-size: 1.5mm;
+    }
+    .buttonchitiet{
+        font-size: 0.5mm;
+    }
+}

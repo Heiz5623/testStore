@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANA SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="GioHangCSS.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="login.js"></script>
+    <script src="giohang.js"></script>
+    <link rel="stylesheet" href="slider.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <style>
+    </style>
+</head>
+<script>
+    var index =1;
+    setInterval(changeimg=function()
+    {
+        var imgs=["img/bana.png","img/iphone12.jpg","img/iphone13.png","img/samsung-galaxy-z-fold-3.jpg"];
+        document.getElementById('img').src =imgs[index];
+        index++;
+        if(index==4)
+        {
+            index=0;
+        }
+    },2000);
+</script>
+<body style="margin: 0; height: 1500px;">
+
+    <div id="main" style="display: flex; margin: 0; width: 100%; height: 100%;">
+        <form id="Fmain" style="margin: 0; width: 100%; height: 100%;">
+            <div class="modal_login" style="display: none;">
+                <div class="nen"></div>
+                <div class="giaodien">
+                    <div class="form">
+                        <h2 class="">LOGIN</h2>
+                        <div onclick="alertClose();" class="btnclose"><i class="icon_close far fa-times-circle"></i></div>
+                        <div>
+                            <div>Username</div>
+                            <input class="in" type="text" placeholder="Enter your Username..." id="tk">
+                            <div>Password</div>
+                            <input class="in" type="password" placeholder="Enter your Password..." id="mk">
+                            <div><i class="fab fa-facebook icon" style="color: blue;"></i><i class="fab fa-twitter icon" style="color:dodgerblue;"></i><i class="fab fa-tumblr-square icon" style="color: darkslategray;"></i></div>
+                        </div>
+                       <!--<div><input type="button" value="LOGIN" class="dangnhap" onclick="login();"></div>-->
+                       <a href="#"><input type="button" class="dangnhap" onclick="login();" value="Đăng Nhập"></input></a>
+                        <!--<div><i class="far fa-user-circle dangnhap" onclick="login();" ></i></div>-->
+                        <div class="footerfrom">Bạn đã có tài khoản chưa ?<a href="#" style="color: darkgreen; opacity: 0.8; cursor: pointer; " onclick="dk()">Đăng Kí</a></div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div id="top">
+                <a href="." style="height: 100%; color: green; background-color: rgb(255, 255, 255); flex: 1;"><img id="Home" style="background-color: white; width: 50px; margin-left: 10px;" src="./img/Banastore.gif" alt=""></a>
+                <div id="findproduct" style="flex: 1">
+                    <input type="search" name="timkiemtxt" value="" id="timkiem" placeholder="Nhập sản phẩm muốn tìm" />
+                    <a href="#" id="icontk" onclick="Runtimkiemsp();" ><i class="fas fa-search"></i></a>                   
+                </div>                            
+                <div id="headeruser" style="flex: 1">
+                    <div id="nutchuyensangadmin"></div>
+                    <div id="tenuser" style="height: 100%;" ></div>
+                    <div style="margin-right: 10%;"><i style="display: none;" onclick="showGH()" class="fas fa-shopping-cart" id="showmuahang"></i></div>
+                    
+                    <div class="vtk"><i class="far fa-user-circle vitri_nutdangnhap" onclick="nhap();"></i></div>  
+                </div>
+            </div>
+            <!-- <div id="top-scroll" style="display: none;">
+                <i class="far fa-user-circle vitri_nutdangnhap vtk" onclick="nhap();" ></i>
+                <div></div>
+                <div id="findproduct">
+                    <input type="search" name="timkiemtxt" value="" id="timkiem" placeholder="Nhập sản phẩm muốn tìm" onload="timkiem();" />
+                    <a href="#" id="icontk" onclick="Runtimkiemsp();" ><i class="fas fa-search"></i></a>
+                </div>
+            </div> -->
+            <div id="title" style="margin-top: 2.8%;"> 
+                <div class="slide">
+                <img id="img" onclick="changeimg()" src="img/bana.png" alt="">   
+                </div>            
+            </div>
+            <div id="MenuPC">
+                    <!-- <a href="?SP=Xiaomi"  class="Hang"><div class="Danhmuc" id="Xiaomi" >Xiaomi</div></a>
+                    <a href="?SP=Samsung" class="Hang"><div class="Danhmuc" id="SamSung">SamSung</div></a>
+                    <a href="?SP=Oppo"    class="Hang"><div class="Danhmuc" id="Oppo">Oppo</div></a> -->
+                    <select name="sapxep" id="Loc-MB" class="Loc" onchange="LocSP(document.getElementsByClassName('soTrang').value ,this.value)">
+                        <option id="BT" value="BT">Sắp xếp theo</option>
+                        <option id="TD" value="TD">Giá Tăng Dần</option>
+                        <option id="GD" value="GD">Giá Giảm Dần</option>
+                        <option id="AZ" value="AZ">A-Z</option>
+                        <option id="ZA" value="ZA">Z-A</option>
+                    </select>
+            </div>
+            <select  name="sapxep" id="Loc-PC" class="Loc" onchange="LocSP(document.getElementsByClassName('soTrang').value ,this.value)">
+                <option id="BT" value="BT">Sắp xếp theo</option>
+                <option id="TD" value="TD">Giá Tăng Dần</option>
+                <option id="GD" value="GD">Giá Giảm Dần</option>
+                <option id="AZ" value="AZ">A-Z</option>
+                <option id="ZA" value="ZA">Z-A</option>
+            </select>
+            <script>
+                $(document).ready(function() {
+                    $(window).scroll(function() {
+                    var pos_body = $('html,body').scrollTop();
+                    if(pos_body>450){
+                        $('#MenuPC').addClass('MenuScroll');
+                    }
+                    else {
+                        $('#MenuPC').removeClass('MenuScroll');
+                    }
+                    });
+                });
+            </script>
+            <div id="center">
+                <div id="content">
+                                      
+                    <!-- hiện thông tin sản phẩm v -->
+                    <div id="ifSP_Overlay" onclick="/*TatTTSP(this.id)*/">   
+                        <div class="ManChe" style="height: 100%; min-width: 15%;" onclick="TatTTSP(this.id)"></div>                    
+                        <div id="ThongTinSP" onclick="/*TatTTSP(this.id)*/">                      
+                            <!-- <img src="/img/xiaomi11.jpg" alt="" >                                                        
+                            <div id="ThongTinSP_text">
+                                <div>'+name+'</div>
+                                <div>'+price+'</div>
+                                <div>
+                                    <input class="SoluongSP" type="button" value="-" onclick="TangSLSP(this.value)">
+                                    <input class="SoluongSP" id="soluongSP" type="text" min="1" max="10" value="1">
+                                    <input class="SoluongSP"type="button" value="+" onclick="TangSLSP(this.value)">
+                                </div>
+                                    <input type="button" value="Mua">
+                                </div>                         -->
+                        </div> 
+                        <div style="height: 100%; min-width: 15%;" class="ManChe" onclick="TatTTSP(this.id)"></div> 
+                    </div>
+                    <!-- hiện thông tin sản phẩm ^ -->
+                    
+
+                    <!-- <div class="ct" id="content1">  4 sản phẩm đầu/Trang -->
+                        <div class="SP" id="SP1" onclick="ShowIfSP(this.id)"></div>
+                        <div class="SP" id="SP2" onclick="ShowIfSP(this.id)"></div>
+                        <div class="SP" id="SP3" onclick="ShowIfSP(this.id)"></div>
+                        <div class="SP" id="SP4" onclick="ShowIfSP(this.id)"></div>
+                    <!-- </div>                    
+                    <div class="ct" id="content2">  4 sản phẩm cuối/Trang -->
+                        <div class="SP" id="SP5" onclick="ShowIfSP(this.id)"></div>
+                        <div class="SP" id="SP6" onclick="ShowIfSP(this.id)"></div>
+                        <div class="SP" id="SP7" onclick="ShowIfSP(this.id)"></div>
+                        <div class="SP" id="SP8" onclick="ShowIfSP(this.id)"></div>
+                    <!-- </div> -->
+                </div>
+                <div id="sotrang">
+                    <div id="sotrang2">
+                       <!-- <a href="#"><input class="soTrang" id="sT1" type="button" value="1" onclick="LocSP(this, document.getElementsByClassName('Loc').value)"></a>
+                       <a href="#"><input class="soTrang" id="sT2" type="button" value="2" onclick="LocSP(this, document.getElementsByClassName('Loc').value)"></a>
+                       <a href="#"><input class="soTrang" id="sT3" type="button" value="3" onclick="LocSP(this, document.getElementsByClassName('Loc').value)"></a> -->
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+
+            </div>
+        </form>
+
+
+
+        <!-- GIỎ HÀNG -->
+        <div id="layer_GH">
+            <div class="GioHang" >
+                <div id="Top_GH">Giỏ Hàng
+                    <div style="color: rgba(255, 255, 255, 0.651);" onclick="dislayer_GH()">x</div>
+                </div>
+                
+                <div id="DSSP_GH" style="word-wrap: normal" class="DSSP">
+                    <div id="ThongTinSanPham_GH">
+                       Thông Tin Sản Phảm
+                    </div>
+                    <div class="GiaSP_GH">GIÁ</div>
+                    <div class="SoLuong_GH">
+                        Số Lượng
+                    </div>
+                </div>
+                
+                <div id="content_GH">
+                    <!-- <div id="DSSP_GH" class="DSSP">
+                        <div id="ThongTinSanPham_GH">
+                            <img src="'+GioHang[i].img+'" alt="">
+                            <div>'+GioHang[i].tensanpham+'</div>
+                        </div>
+                        <div id="priceGH'+i+'" class="GiaSP_GH">'+GioHang[i].price+'</div>
+                        <div class="SoLuong_GH">
+                            <input class="SoLuong" id="SoluongGH'+i+'" type="number" value="'+GioHang[i].soluongsanpham+'">
+                            <input id="ChangeSL_GH" type="button" value="Đặt">
+                            <input class="DelSP" type="button" onclick="xoaSP_KhoiGioHang('+i+')" value="Xóa">
+                        </div>
+                    </div> -->
+                </div>
+                <div id="Bottom_GH">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

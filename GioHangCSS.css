@@ -1,0 +1,115 @@
+/* CSS GIỎ HÀNG */
+#layer_GH{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+    
+}
+.GioHang{
+    width: 70%;
+    height: auto;
+    max-height: 60%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+
+}
+#Top_GH{
+    height: 20%;
+    font-size: 250%;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: inline-flex;
+    color:aliceblue;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color:#212529cc;
+}
+#Top_GH div:hover{
+    cursor: pointer !important;
+    color: rgb(255, 255, 255) !important;
+}
+#Bottom_GH{
+    display: inline-flex;
+    height: 10%;
+    font-size: 150%;
+    border-top: 1px solid black;
+    color:aliceblue;
+    justify-content: end;
+    padding: 1%;  
+    box-sizing: border-box;  
+    background-color:#212529cc; 
+}
+#Bottom_GH *{
+    margin: auto 1%;
+}
+#content_GH{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.DSSP{
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+    position: relative;
+    font-size: 20px;
+    font-weight: 800;
+}
+#ThongTinSanPham_GH img{
+    width: 150px;
+    height: 100%;
+}
+.SoLuong_GH input{
+    width: 30px;
+}
+#ThongTinSanPham_GH{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 200px;
+  
+}
+#ThongTinSanPham_GH p{
+    word-wrap: break-word;
+   
+    
+}
+.DelSP{
+    font-size: 30px;
+    position: absolute;
+    top: 1;
+    right: 3%;
+
+}
+.DelSP:hover{
+    color: rgb(122, 117, 117);
+    cursor: pointer;
+}
+.DelSP:active{
+    font-size: 29px;
+}
+#ChangeSL_GH{
+    font-size: 150%;
+    position: absolute;
+}
+#ChangeSL_GH:hover{
+    color: rgb(122, 117, 117);
+    cursor: pointer;
+}
+#ChangeSL_GH:active{
+    color: rgb(77, 75, 75);
+}
