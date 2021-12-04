@@ -4,7 +4,7 @@ function createProduct() {
         let Product = [
             {
                 id: "0",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Điện thoại Xiaomi Mi 11 Lite",
                 type: "Xiaomi",
                 price: 9400
@@ -12,7 +12,7 @@ function createProduct() {
             {
 
                 id: "1",
-                img: "/img/samsung-galaxy-z-fold-3.jpg",
+                img: "./img/samsung-galaxy-z-fold-3.jpg",
                 Name: "SS1",
                 type: "Samsung",
                 price: 1000
@@ -20,7 +20,7 @@ function createProduct() {
             {
 
                 id: "2",
-                img: "/img/Minote10.jpg",
+                img: "./img/Minote10.jpg",
                 Name: "Xiao2",
                 type: "Xiaomi",
                 price: 1000
@@ -28,7 +28,7 @@ function createProduct() {
             {
 
                 id: "3",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao3",
                 type: "Xiaomi",
                 price: 9400
@@ -36,7 +36,7 @@ function createProduct() {
             {
 
                 id: "4",
-                img: "/img/samsung-galaxy-z-fold-3.jpg",
+                img: "./img/samsung-galaxy-z-fold-3.jpg",
                 Name: "SS4",
                 type: "Samsung",
                 price: 1000
@@ -44,7 +44,7 @@ function createProduct() {
             {
 
                 id: "5",
-                img: "/img/Minote10.jpg",
+                img: "./img/Minote10.jpg",
                 Name: "Xiao5",
                 type: "Xiaomi",
                 price: 1000
@@ -52,21 +52,21 @@ function createProduct() {
             {
 
                 id: "6",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao6",
                 type: "Apple",
                 price: 9400
             },
             {
                 id: "7",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao7",
                 type: "Apple",
                 price: 9500
             },
             {
                 id: "8",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao8",
                 type: "Apple",
                 price: 8300
@@ -74,7 +74,7 @@ function createProduct() {
             {
 
                 id: "9",
-                img: "/img/Minote10.jpg",
+                img: "./img/Minote10.jpg",
                 Name: "Xiao5",
                 type: "Apple",
                 price: 1000
@@ -82,28 +82,28 @@ function createProduct() {
             {
 
                 id: "10",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao6",
                 type: "Oppo",
                 price: 9400
             },
             {
                 id: "11",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao7",
                 type: "Oppo",
                 price: 9500
             },
             {
                 id: "12",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao8",
                 type: "Oppo",
                 price: 8300
             },
             {
                 id: "13",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Điện thoại Xiaomi Mi 11 Lite",
                 type: "Xiaomi",
                 price: 9400
@@ -111,7 +111,7 @@ function createProduct() {
             {
 
                 id: "14",
-                img: "/img/samsung-galaxy-z-fold-3.jpg",
+                img: "./img/samsung-galaxy-z-fold-3.jpg",
                 Name: "SS1",
                 type: "Samsung",
                 price: 1000
@@ -119,7 +119,7 @@ function createProduct() {
             {
 
                 id: "15",
-                img: "/img/Minote10.jpg",
+                img: "./img/Minote10.jpg",
                 Name: "Xiao2",
                 type: "Xiaomi",
                 price: 1000
@@ -127,7 +127,7 @@ function createProduct() {
             {
 
                 id: "16",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao3",
                 type: "Xiaomi",
                 price: 9400
@@ -135,7 +135,7 @@ function createProduct() {
             {
 
                 id: "17",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao3",
                 type: "Xiaomi",
                 price: 9400
@@ -144,7 +144,7 @@ function createProduct() {
             {
 
                 id: "18",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao3",
                 type: "Xiaomi",
                 price: 9400
@@ -152,7 +152,7 @@ function createProduct() {
             {
 
                 id: "19",
-                img: "/img/xiaomi11.jpg",
+                img: "./img/xiaomi11.jpg",
                 Name: "Xiao3",
                 type: "Xiaomi",
                 price: 9400
@@ -413,7 +413,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "9",
-//     img: "/img/samsung-galaxy-z-fold-3.jpg",
+//     img: "./img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS9",
 //     type: "Samsung",
 //     price: 2000
@@ -421,7 +421,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "10",
-//     img: "/img/Minote10.jpg",
+//     img: "./img/Minote10.jpg",
 //     Name: "Xiao10",
 //     type: "Xiaomi",
 //     price: 3000
@@ -429,7 +429,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "11",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao11",
 //     type: "Xiaomi",
 //     price: 4000
@@ -437,7 +437,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "12",
-//     img: "/img/samsung-galaxy-z-fold-3.jpg",
+//     img: "./img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS12",
 //     type: "Samsung",
 //     price: 1000
@@ -445,7 +445,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "13",
-//     img: "/img/Mingote10.jpg",
+//     img: "./img/Mingote10.jpg",
 //     Name: "Xiao13",
 //     type: "Xiaomi",
 //     price: 500
@@ -453,21 +453,21 @@ function Runtimkiemsp() {
 // {
 
 //     id: "14",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao14",
 //     type: "Xiaomi",
 //     price: 200
 // },
 // {
 //     id: "15",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao15",
 //     type: "Xiaomi",
 //     price: 100
 // },
 // {
 //     id: "16",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "SS16",
 //     type: "Samsung",
 //     price: 4000
@@ -475,7 +475,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "17",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao11",
 //     type: "Xiaomi",
 //     price: 4000
@@ -483,7 +483,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "18",
-//     img: "/img/samsung-galaxy-z-fold-3.jpg",
+//     img: "./img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS12",
 //     type: "Samsung",
 //     price: 1000
@@ -491,7 +491,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "19",
-//     img: "/img/Mingote10.jpg",
+//     img: "./img/Mingote10.jpg",
 //     Name: "Xiao13",
 //     type: "Xiaomi",
 //     price: 500
@@ -499,21 +499,21 @@ function Runtimkiemsp() {
 // {
 
 //     id: "20",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao14",
 //     type: "Xiaomi",
 //     price: 200
 // },
 // {
 //     id: "21",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao15",
 //     type: "Xiaomi",
 //     price: 100
 // },
 // {
 //     id: "22",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "SS16",
 //     type: "Samsung",
 //     price: 4000
@@ -521,7 +521,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "23",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Điện thoại Xiaomi Mi 11 Lite",
 //     type: "Xiaomi",
 //     price: 9400
@@ -529,7 +529,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "24",
-//     img: "/img/samsung-galaxy-z-fold-3.jpg",
+//     img: "./img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS1",
 //     type: "Samsung",
 //     price: 1000
@@ -537,7 +537,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "25",
-//     img: "/img/Minote10.jpg",
+//     img: "./img/Minote10.jpg",
 //     Name: "Xiao2",
 //     type: "Xiaomi",
 //     price: 1000
@@ -545,7 +545,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "26",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao3",
 //     type: "Xiaomi",
 //     price: 9400
@@ -553,7 +553,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "27",
-//     img: "/img/samsung-galaxy-z-fold-3.jpg",
+//     img: "./img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS4",
 //     type: "Samsung",
 //     price: 1000
@@ -561,7 +561,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "28",
-//     img: "/img/Minote10.jpg",
+//     img: "./img/Minote10.jpg",
 //     Name: "Xiao5",
 //     type: "Xiaomi",
 //     price: 1000
@@ -569,35 +569,35 @@ function Runtimkiemsp() {
 // {
 
 //     id: "29",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao6",
 //     type: "Xiaomi",
 //     price: 9400
 // },
 // {
 //     id: "30",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao7",
 //     type: "Xiaomi",
 //     price: 9500
 // },
 // {
 //     id: "31",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao8",
 //     type: "Xiaomi",
 //     price: 8300
 // },
 // {
 //     id: "32",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao8",
 //     type: "Xiaomi",
 //     price: 8300
 // },
 // {
 //     id: "33",
-//     img: "/img/xiaomi11.jpg",
+//     img: "./img/xiaomi11.jpg",
 //     Name: "Xiao8",
 //     type: "Xiaomi",
 //     price: 8300
