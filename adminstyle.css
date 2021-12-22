@@ -326,9 +326,25 @@
     opacity: 0.6;
     cursor: pointer;
 }
+.nutxoa_donhang{
+    margin: 4px;
+    font-size: 25px;
+}
+.nutxoa_donhang:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+#buton_amin{
+    opacity: 0.9;
+    cursor: pointer;
+}
 @media(max-width:767px)
 {
     .nutxoa_taikhoan{
+        margin: 1px;
+        font-size: 5px;
+    }
+    .nutxoa_donhang{
         margin: 1px;
         font-size: 5px;
     }
@@ -356,6 +372,9 @@
 .right_user{
     text-align: center;
 }
+.bang{
+    width: 100%;
+}
 @media(max-width:768px)
 {
     #content {
@@ -367,6 +386,7 @@
         border-bottom: none;
     }
     .bang{
+        width: 100%;
         font-size: 2mm;
     }
     .buttonchitiet{
@@ -381,4 +401,68 @@
     .buttonchitiet{
         font-size: 0.5mm;
     }
+}
+
+/*menu*/
+
+#iconhtmenu{
+        display: block;
+        margin: 0px auto;
+        font-size: 28px;
+        color: darkblue;
+        width: 32px;
+        border-radius: 5px;
+    }
+    #menu{
+        display: none;
+    }
+    #menu a{
+        font-size: 14px;
+    }
+    #iconhtmenu i{
+    transition: 0.5s;
+    }
+    #iconhtmenu:hover{
+        transform: scale(1.1,1.1);
+        background: darksalmon;
+    }
+    #iconhtmenu:hover i{
+        transform: rotate(90deg);
+    }
+@media (max-width: 800px){
+        #iconhtmenu{
+            margin: 40px auto;
+        }
+}
+   
+.Tongsl {
+    height: 90px;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 22px;
+    border-radius: 10px;
+    background: darkcyan;
+    color: white;
+}
+.Tongsl:hover{
+    transform: scale(1.1,1.1);
+}
+.Tongsl div{
+    height: 50%;
+    text-align: center;
+    line-height: 45px;
+}
+.TongDT {
+    font-size: 22px;
+    margin-top: 40px;
+    padding-left: 40px;
+}
+#bangloctime {
+    text-align: center;
+    margin: 40px auto;
+}
+#bangloctime input[type=button]{
+    cursor: pointer;
 }

@@ -22,7 +22,7 @@
     var index =1;
     setInterval(changeimg=function()
     {
-        var imgs=["img/bana.png","img/iphone12.jpg","img/iphone13.png","img/samsung-galaxy-z-fold-3.jpg"];
+        var imgs=["./img/redmi10.jpg","./img/iphone13.png","./img/redmi10.jpg","./img/SliSSGLX.jpg"];
         document.getElementById('img').src =imgs[index];
         index++;
         if(index==4)
@@ -30,6 +30,27 @@
             index=0;
         }
     },2000);
+    var index2 =1;
+    setInterval(changeimg2=function()
+    {
+        var imgs2=["img/bana.png","./img/acb.png","./img/xiaologo.svg.png","./img/SSIc.jpg"];
+        document.getElementById('imgs2').src =imgs2[index2];
+        index2++;
+        if(index2==4)
+        {
+            index2=0;
+        }
+    },2000);
+    var index1 =0;
+    setInterval(homestyle=function(){
+        var home=['/img/Banastore.gif'];
+        document.getElementById('Home').src =home[index1];
+        index1++;
+        if(index1==1)
+        {
+            index1=0;
+        }
+    },4000);
 </script>
 <body style="margin: 0; height: 1500px;">
 
@@ -57,7 +78,7 @@
                 </div>
             </div>
             <div id="top">
-                <a href="." style="height: 100%; color: green; background-color: rgb(255, 255, 255); flex: 1;"><img id="Home" style="background-color: white; width: 50px; margin-left: 10px;" src="./img/Banastore.gif" alt=""></a>
+                <div style="flex: 1;"><a href="." style="height: 100%; background-color: rgb(255, 255, 255);"><img id="Home" onclick="homestyle();" style="background-color: white; width: 50px; margin-left: 10px;" src="./img/Banastore.gif" alt=""></a></div>
                 <div id="findproduct" style="flex: 1">
                     <input type="search" name="timkiemtxt" value="" id="timkiem" placeholder="Nhập sản phẩm muốn tìm" />
                     <a href="#" id="icontk" onclick="Runtimkiemsp();" ><i class="fas fa-search"></i></a>                   
@@ -80,8 +101,11 @@
             </div> -->
             <div id="title" style="margin-top: 2.8%;"> 
                 <div class="slide">
-                <img id="img" onclick="changeimg()" src="img/bana.png" alt="">   
-                </div>            
+                <img id="img" onclick="changeimg(),changeimg2()" src="./img/redmi10.jpg" alt="">  
+                </div>
+                <div class="slide2">         
+                <img id="imgs2" onclick="changeimg2(),changeimg()" src="img/bana.png" alt="">    
+                </div>
             </div>
             <div id="MenuPC">
                     <!-- <a href="?SP=Xiaomi"  class="Hang"><div class="Danhmuc" id="Xiaomi" >Xiaomi</div></a>
@@ -106,7 +130,7 @@
                 $(document).ready(function() {
                     $(window).scroll(function() {
                     var pos_body = $('html,body').scrollTop();
-                    if(pos_body>450){
+                    if(pos_body>400){
                         $('#MenuPC').addClass('MenuScroll');
                     }
                     else {
@@ -115,9 +139,15 @@
                     });
                 });
             </script>
-            <div id="center">
+            <div id="center" style="position: relative">
                 <div id="content">
-                                      
+                    
+                    <div id="loctheogia">
+                        <input type="text" name="tkttxt" id="tkt" value="" placeholder="Giá từ ..."/>
+                        <input type="text" name="tkctxt" id="tkc" value="" placeholder="Đến"/>
+                        <div class="icon" id="IconLocTheoGia"  onclick="Locgiasp();"><i class="fas fa-search-dollar"></i></div>
+                    </div>
+                    
                     <!-- hiện thông tin sản phẩm v -->
                     <div id="ifSP_Overlay" onclick="/*TatTTSP(this.id)*/">   
                         <div class="ManChe" style="height: 100%; min-width: 15%;" onclick="TatTTSP(this.id)"></div>                    
@@ -160,8 +190,38 @@
                     </div>
                 </div>
             </div>
-            <div id="bottom">
+            <div id="footer">
 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                                <ul class="menu_bottom">
+                                    <li><a href="">Trung tâm hỗ trợ</a></li>
+                                    <li><a href="">Mail</a></li>
+                                    <li><a href="">Hướng dẫn mua hàng</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h3>ABOUT</h3>
+                                <ul class="menu_bottom">
+                                    <li><a href="">Giới thiệu</a></li>
+                                    <li><a href="">Điều khoản</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <H3>THEO DÕI</H3>
+                                <ul class="menu_bottom">
+                                    <li><a href=""><i class="fab fa-facebook"></i> Facebook</a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                                    <li><a href=""><i class="fab fa-youtube"></i> Youtube</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 copy_right">Copyright © 2021 Bana Shop </div>
+                    </div>
             </div>
         </form>
 
@@ -170,7 +230,11 @@
         <!-- GIỎ HÀNG -->
         <div id="layer_GH">
             <div class="GioHang" >
-                <div id="Top_GH">Giỏ Hàng
+                <div id="Top_GH">
+                    <div style="height: 100%" >
+                        <div class="input_GH" id="ShowGH" onclick="showGH()">Giỏ Hàng</div>
+                        <div class="input_GH" id="ShowDH" onclick="showDH()">Đơn Hàng</div>
+                    </div>
                     <div style="color: rgba(255, 255, 255, 0.651);" onclick="dislayer_GH()">x</div>
                 </div>
                 

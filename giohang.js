@@ -47,6 +47,8 @@ function GopSPGiongNhau(arr){//giống tên tk và tên sản phẩm thì gộp 
 
 function showGH(){
     document.getElementById('layer_GH').style.display="flex";
+    document.getElementById('ShowGH').style.borderBottom="5px solid #b3b3b3fa"
+    document.getElementById('ShowDH').style.borderBottom="0px solid #0000FF"
     var vtriInner=document.getElementById('content_GH');
     var tendangnhap = JSON.parse(localStorage.getItem('tendangnhap'))
     GioHang= JSON.parse(localStorage.getItem('ALLGH'));
@@ -76,9 +78,18 @@ function innerTongTien(Username){
 }
 
 function ChangeSLSP(val){
-    GioHang[val].soluongsanpham=document.getElementById('SoluongGH'+val+'').value;
-    localStorage.setItem('ALLGH',JSON.stringify(GioHang));  
-    innerTongTien(GioHang[val].tendangnhap);
+    if(document.getElementById('SoluongGH'+val+'').value>1)
+    {
+        GioHang[val].soluongsanpham=document.getElementById('SoluongGH'+val+'').value;
+        localStorage.setItem('ALLGH',JSON.stringify(GioHang));  
+        innerTongTien(GioHang[val].tendangnhap);
+    }
+    else 
+    {
+        alert('Nhập sai số lượng')
+        document.getElementById('SoluongGH'+val+'').focus();
+
+    }
 }
 
 
@@ -97,6 +108,11 @@ function getTTSP(){
         var tensanpham=document.getElementById("name_TTSP").innerHTML;
         var price=document.getElementById("gia_TTSP").innerHTML;
         var soluongsanpham=document.getElementById("soluongSP").value;
+        if(soluongsanpham<=0)
+        {
+            alert("Sai Số Lượng")
+            return false;
+        }
         temp={
             tendangnhap,
             img,
@@ -109,6 +125,10 @@ function getTTSP(){
         alert("Đã thêm vào giỏ hàng");
        }
 }
+
+
+
+
 function layThongTinKhachHang(TenDangNhap){
     var tt=JSON.parse(localStorage.getItem('taikhoankhachhang'))
     for(i=0; i<tt.length; i++)
@@ -172,6 +192,7 @@ function xuatDonHang(){
     var time=new Date();
     time.getTime();
     var tinhtrang="Chưa Xử Lý";
+    var deletenone='0';
     var j=0;
     for(i=0; i<GioHang.length; i++)
     {
@@ -179,6 +200,7 @@ function xuatDonHang(){
         {
             SanPham[j]=
                 {
+                    img: GioHang[i].img,
                     TenSP: GioHang[i].tensanpham,
                     Gia: GioHang[i].price,
                     SoluongSP: GioHang[i].soluongsanpham,
@@ -194,6 +216,7 @@ function xuatDonHang(){
             MaDon,
             time,
             tinhtrang,
+            deletenone,
             SanPham,
             DonGia
         }
@@ -201,4 +224,44 @@ function xuatDonHang(){
     DonHang.push(temp);
     console.log(DonHang);
     localStorage.setItem('DonHang',JSON.stringify(DonHang));
+}
+
+
+
+function showDH(){
+    document.getElementById('layer_GH').style.display="flex";
+    document.getElementById('ShowDH').style.borderBottom="5px solid #b3b3b3fa"
+    document.getElementById('ShowGH').style.borderBottom="0px solid #0000FF"
+    var vtriInner=document.getElementById('content_GH');
+    var tendangnhap = JSON.parse(localStorage.getItem('tendangnhap'))
+    var listTK=JSON.parse(localStorage.getItem('taikhoankhachhang'))    
+    var sdt;
+    for(i=0; i<listTK.length; i++)
+    {        
+        if(tendangnhap==listTK[i].taikhoan)
+        {
+            sdt=listTK[i].phone;
+            console.log(sdt);
+            break;
+        }
+    }
+    if(localStorage.getItem('DonHang')==null)
+    return false;
+    var DonHang= JSON.parse(localStorage.getItem('DonHang'));    
+    vtriInner.innerHTML="";
+    for(i=0; i<DonHang.length; i++)
+    {
+        console.log("Lặp tới đây?");
+        if(DonHang[i].SDT==sdt)
+        {
+            vtriInner.innerHTML+='<div id="MaDonHang_DH"  >Mã Đơn Hàng: '+DonHang[i].MaDon+'</div>'
+            console.log(DonHang[i].SDT);
+            var SPDonHang=DonHang[i].SanPham;
+            console.log(SPDonHang.length);
+            for(j=0; j<DonHang[i].SanPham.length; j++)
+            vtriInner.innerHTML+='<div id="DSSP_GH'+j+'" class="DSSP"><div id="ThongTinSanPham_GH"><div><img src="'+SPDonHang[j].img+'" alt=""></div><p>'+SPDonHang[j].TenSP+'</p></div><div id="priceGH'+j+'" class="GiaSP_GH">'+SPDonHang[j].Gia+'</div><div class="SoLuong_GH"><input class="SoLuong" disabled id="SoluongGH'+j+'" type="number" min="1" max="20" value="'+SPDonHang[j].SoluongSP+'"></div></div>'
+            
+        } 
+    }
+    document.getElementById('Bottom_GH').innerHTML=document.getElementById('Bottom_GH').innerHTML='<div id="TongGia_GH">Tất Cả Đơn Hàng</div>'
 }

@@ -1,7 +1,7 @@
 var arruser=[];
 function taokhachhang(){
     if(localStorage.getItem('taikhoankhachhang')===null){
-        arruser=[{taikhoan:'abc123',matkhau:'123123',nameuser:'taikhoan123',phone:'9999999999',thuoctinh:'1'},{taikhoan:'admin',matkhau:'admin',nameuser:'nguyenhaiduong',phone:'6969696969',thuoctinh:'0'}];
+        arruser=[{taikhoan:'abc123',matkhau:'123123',nameuser:'Lữ Nhựt Duy',phone:'9999999999',thuoctinh:'1'},{taikhoan:'admin',matkhau:'admin',nameuser:'Nguyễn Hải Dương',phone:'6969696969',thuoctinh:'0'}];
         localStorage.setItem('taikhoankhachhang',JSON.stringify(arruser));
     }else{
         arruser=JSON.parse(localStorage.getItem('taikhoankhachhang'));

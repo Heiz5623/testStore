@@ -27,10 +27,10 @@ a{
 }
 #title{
     width: 100%;
-    height: 30%;
+    height: 25%;
     border: 0.5px solid black;
     border-bottom: none ;
-    background-color: #212529;
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     align-self: flex-start;
@@ -104,6 +104,7 @@ a{
 .Hang{
     flex: 1;
     background-color: #ffffff;
+    border-top: 0.2px solid #a1a1a171;
     border-left: 0.2px solid #a1a1a171;
     border-bottom: 0.2px solid #a1a1a171;
     text-align: center;
@@ -133,10 +134,35 @@ a{
     margin-top: 1%;
     margin-left: 15%;
     height: 20px;
+    z-index: 1;
 }
 #Loc-MB{
     display: none;
 }
+
+#loctheogia{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    width: 5%;
+    position: absolute;
+    right: 1;
+    z-index: 0;
+
+}
+#loctheogia input{
+    margin: 2px;
+}
+
+#IconLocTheoGia {
+    font-size:25px;
+    border: #2125298e solid 2px;
+    border-radius: 20%;
+    padding:0% 5%;
+    color: #212529;
+}
+
+
 /*Phần phân loại sản phẩm ^ */
 
 /*Phần hiện thông tin SP v*/
@@ -156,22 +182,23 @@ a{
 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
-    width: 70%;
+    width: 100%;
     background-color: #ffffff;
     z-index: 2;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 #ThongTinSP img{
-    width: 100%;
+    height: 100%;
+    border-right: #52565a57 2px solid;
 }
 #ThongTinSP_text{
     background-color: #ffffff;
     font-size: 200%;
     flex: 1;
     width: 100%;
-
+    padding: 2%;
 }
 #name_TTSP{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -234,7 +261,7 @@ a{
 }
 .SP{
     width: 270px;
-    height: 370px;
+    height: auto;
     border: #2125292c solid 1px;
     margin: auto 15px;
     text-align: center;
@@ -339,9 +366,9 @@ a{
 
 
 
-#bottom{
+#footer{
     width: 100%;
-    height: 13.5%;   
+    height: auto;
     border: 0.5px solid black;  
     background-color: #212529;
 }
@@ -408,7 +435,6 @@ a{
 {
     .SP{
         width: 243px;
-        height: 333px;
     }
     .SP>div{
         font-size: 80%;
@@ -420,24 +446,50 @@ a{
         display: none;
     }
     #ifSP_Overlay{
-        flex-direction: column;
+        flex-direction: row;
     }
     #ThongTinSP{    
-        width: 100%;
-        height: auto;
+        height: 100%;
+        width: auto;
         font-size: 70%;
-        flex-direction: row;
+        flex-direction: column;
         margin: auto;
+        
     }
     #ThongTinSP img{
-        width: 70%;
-
+        height: 70%;
+        border: none;
+        padding: 5% 0;
+        border-bottom: #212529 1px solid;
     }
     #ThongTinSP_text{
-        width: 40%;
-        margin: 5px;
+        padding-top: 5%;
+        box-sizing: border-box;
     }
-    
+    @media (max-width: 1390px) {
+    #loctheogia{
+        display: flex;
+        flex-direction:column;
+        width: 12%;
+        position: absolute;
+        left: 5%;
+        top: 1%;
+    }
+    #IconLocTheoGia {
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        border: #212529 solid 2px;
+        width: 96%;
+        margin-top: 5px;
+        margin-left: 0;
+        border-radius: 5%;
+        padding: 0;
+    }
+    .slide2{
+        display: none;
+    }
+    }
     @media (max-width: 1032px) {
         #findproduct{
             top: 18%;
@@ -451,6 +503,29 @@ a{
         #findproduct a{
             font-size: 20px;
         }
+    #ifSP_Overlay{
+        flex-direction: column;
+    }
+    #ThongTinSP{    
+        height: auto;
+        width: 100%;
+        font-size: 70%;
+        flex-direction: column;
+        margin: auto;
+        padding: 2%;
+        
+    }
+    #ThongTinSP img{
+        height: 100%;
+        border: none;
+        padding: 0;
+        border-right: #3f40416b 2px solid;
+    }
+    #ThongTinSP_text{
+        
+        padding-top: 0;
+        box-sizing: none;
+    }
     }
     
     @media (max-width: 813px) {
@@ -463,7 +538,6 @@ a{
         }
         .SP{
             width: 150px;
-            height: 213px;
         }
         .SP>div{
             font-size: 100%;
@@ -503,27 +577,24 @@ a{
             font-size: 25px;
             color: #212529;
         }
+        .slide2{
+            display: flex;
+            margin: auto;
+            height: auto;
+        }
+        .slide{
+            display: none;
+        }
+        #title {
+            justify-content: center;
+        }
+
     }
 }
 @media (max-width: 476px)
 {
-    #ThongTinSP{    
-        flex: 1;
-        width: 100%;
-        height: auto;
-        font-size: 70%;
-        flex-direction: column;
-        margin: auto;
-    }
-    #ThongTinSP img{
-        width: 100%;
-        
-    }
-    #ThongTinSP_text{
-        width: 100%;
-        margin: 5px;
-    }   
-    
+
+
     #findproduct{
         top: 10%;
         right: 15%;
@@ -534,29 +605,44 @@ a{
         font-size: 20px;
         color: #212529;
     }
+    #loctheogia{
+        width: 20%;
+    }
+
 }
 
 @media (max-width: 400px)
 {
+    #ifSP_Overlay{
+        flex-direction: column;
+    }
+    #ThongTinSP{ 
+        height: auto;
+        width: 100%;
+        font-size: 50%;
+        flex-direction: row;
+        margin: auto;
+        
+    }
+    #ThongTinSP img{
+        height: 100%;
+        border: none;
+        padding: 0;
+        border-bottom: #212529 1px solid;
+    }
+    #ThongTinSP_text{
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+
     .SP{
         width: 124px;
-        height: 170px;
     }
     .SP>div{
         font-size: 70%;
     }
-    #ThongTinSP{    
-        width: 100%;
-        font-size: 80%;
-    }
-    #ThongTinSP_text{    
-        width: 100%;
-        font-size: 150%;
-       
-    }
-    #ThongTinSP img{
-        width: 100%;
-    }  
     
     #findproduct {
         top: 5%;
@@ -585,3 +671,42 @@ a{
         display: none;
     }
 }      
+.container {
+    width: 100%;
+    height: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 3;
+    padding:0 5%;
+    padding-bottom: 2%;
+}
+.row {
+    color:#9fb4c0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.col-2 {
+    width: 100%;
+}
+.menu_bottom{
+    margin: 0;
+}
+ul.menu_bottom li a{
+    color: white;
+    font-size: 120%;
+    list-style: none;
+}
+
+.copy_right{
+    text-align: center;
+    border-top: 1px solid #fff;
+    color: white;
+    font-size: 17px;
+    padding-top: 10px;
+}

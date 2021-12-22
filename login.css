@@ -58,7 +58,7 @@
     top: 0;
     right: 0;
     padding: 0.1%;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
 }
 .btnclose:hover{
     opacity: 0.6;

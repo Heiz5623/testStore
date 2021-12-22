@@ -2,161 +2,162 @@ let SanPham = JSON.parse(localStorage.getItem('Product'));
 function createProduct() {
     if (localStorage.getItem('Product') === null) {
         let Product = [
-            {
+{
                 id: "0",
-                img: "./img/xiaomi11.jpg",
-                Name: "Điện thoại Xiaomi Mi 11 Lite",
+                img: "./img/xiaomi11lite.jpg",
+                Name: "Xiaomi Mi 11 Lite",
                 type: "Xiaomi",
-                price: 9400
+                price: 335
             },
             {
 
                 id: "1",
-                img: "./img/samsung-galaxy-z-fold-3.jpg",
-                Name: "SS1",
+                img: "./img/galaxya52.jpg",
+                Name: "Samsung Galaxy A52",
                 type: "Samsung",
-                price: 1000
+                price: 499
             },
             {
 
                 id: "2",
-                img: "./img/Minote10.jpg",
-                Name: "Xiao2",
+                img: "./img/xiaomi11t.jpg",
+                Name: "Xiaomi 11T",
                 type: "Xiaomi",
-                price: 1000
+                price: 599
             },
             {
 
                 id: "3",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao3",
+                img: "./img/redminote11.jpg",
+                Name: "Xiaomi Redmi Note 11 Pro",
                 type: "Xiaomi",
-                price: 9400
+                price: 330
             },
             {
 
                 id: "4",
-                img: "./img/samsung-galaxy-z-fold-3.jpg",
-                Name: "SS4",
+                img: "./img/galaxya72.jpg",
+                Name: "Samsung Galaxy A72",
                 type: "Samsung",
-                price: 1000
+                price: 499
             },
             {
 
                 id: "5",
-                img: "./img/Minote10.jpg",
-                Name: "Xiao5",
+                img: "./img/xiaomipocox3.jpg",
+                Name: "Xiaomi POCO X3 PRO",
                 type: "Xiaomi",
-                price: 1000
+                price: 299
             },
             {
 
                 id: "6",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao6",
+                img: "./img/iphone11promax.jpg",
+                Name: "iPhone 11 Pro Max",
                 type: "Apple",
-                price: 9400
+                price: 799
             },
             {
                 id: "7",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao7",
+                img: "./img/iphone13promax.jpg",
+                Name: "iPhone 13 Pro Max",
                 type: "Apple",
-                price: 9500
+                price: 1149
             },
             {
                 id: "8",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao8",
+                img: "./img/iphone13mini1.jpg",
+                Name: "iPhone 13 Mini",
                 type: "Apple",
-                price: 8300
+                price: 830
             },
             {
 
                 id: "9",
-                img: "./img/Minote10.jpg",
-                Name: "Xiao5",
+                img: "./img/iphone12pro.jpg",
+                Name: "iPhone 12 Pro",
                 type: "Apple",
-                price: 1000
+                price: 999
             },
             {
 
                 id: "10",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao6",
+                img: "./img/oppoa54.jpg",
+                Name: "OPPO A54",
                 type: "Oppo",
-                price: 9400
+                price: 175
             },
             {
                 id: "11",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao7",
+                img: "./img/oppoa74.jpg",
+                Name: "OPPO A74",
                 type: "Oppo",
-                price: 9500
+                price: 220
             },
             {
                 id: "12",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao8",
+                img: "./img/oppoa55.jpg",
+                Name: "OPPO A55",
                 type: "Oppo",
-                price: 8300
+                price: 195
             },
             {
                 id: "13",
-                img: "./img/xiaomi11.jpg",
-                Name: "Điện thoại Xiaomi Mi 11 Lite",
+                img: "./img/redminote10.jpg",
+                Name: "Xiao Redmi Note 10 Pro",
                 type: "Xiaomi",
-                price: 9400
+                price: 330
             },
             {
 
                 id: "14",
-                img: "./img/samsung-galaxy-z-fold-3.jpg",
-                Name: "SS1",
+                img: "./img/galaxym52.jpg",
+                Name: "Samsung Galaxy M52 5G",
                 type: "Samsung",
-                price: 1000
+                price: 465
             },
             {
 
                 id: "15",
-                img: "./img/Minote10.jpg",
-                Name: "Xiao2",
+                img: "./img/redminote10s.jpg",
+                Name: "Xiaomi Redmi Note 10S",
                 type: "Xiaomi",
-                price: 1000
+                price: 259
             },
             {
 
                 id: "16",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao3",
+                img: "./img/redmi-10.jpg",
+                Name: "Xiaomi Redmi 10",
                 type: "Xiaomi",
-                price: 9400
+                price: 280
             },
             {
 
                 id: "17",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao3",
+                img: "./img/redmi9a.jpg",
+                Name: "Xiaomi Redmi 9A",
                 type: "Xiaomi",
-                price: 9400
+                price: 169
             },
 
             {
 
                 id: "18",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao3",
+                img: "./img/redmi9c.jpg",
+                Name: "Xiaomi Redmi 9C",
                 type: "Xiaomi",
-                price: 9400
+                price: 199
             },
             {
 
                 id: "19",
-                img: "./img/xiaomi11.jpg",
-                Name: "Xiao3",
+                img: "./img/redminote8.jpg",
+                Name: "Xiaomi Redmi Note 8",
                 type: "Xiaomi",
-                price: 9400
+                price: 199
             }
+
 
 
         ];
@@ -181,6 +182,9 @@ console.log("Chuỗi SP" + JSON.stringify(SanPham));
 //Lấy mảng tìm kiếm 
 let Mangtsp = JSON.parse(localStorage.getItem('Mangsp'));
 
+//Reset mảng lọc giá
+localStorage.setItem('locgiasp',JSON.stringify({tugia:"",dengia:""}));
+
 window.onload = function () {
     createProduct();
     LocSP();
@@ -198,24 +202,38 @@ class LoaiSP {
         this.tenSP = tensp;
     }
 }
-function MangLoaiSP() {
-    var HangSP = [
+var HangSP
+if (localStorage.getItem('HangSP') == null) {
+    HangSP = [
         new LoaiSP("Xiaomi", "Xiaomi"),
         new LoaiSP("Samsung", "Samsung"),
         new LoaiSP("Apple", "Apple"),
-        new LoaiSP("Oppo", "Oppo"),
+        new LoaiSP("Oppo", "Oppo")
     ];
-    for (i = 0; i < HangSP.length; i++) {
-        document.getElementById("MenuPC").innerHTML += '<a href="?SP=' + HangSP[i].idSP + '"  class="Hang"><div class="Danhmuc" id="' + HangSP[i].idSP + '" >' + HangSP[i].tenSP + '</div></a>'
-    }
+    localStorage.setItem('HangSP', JSON.stringify(HangSP))
+ }
 
+ HangSP = JSON.parse(localStorage.getItem('HangSP'));
+ function MangLoaiSP() {
+    for (i = 0; i < HangSP.length; i++) {
+        for(j=0; j<SanPham.length; j++)
+        {
+            if(SanPham[j].type==HangSP[i].tenSP)
+            {
+                document.getElementById("MenuPC").innerHTML += '<a href="?SP=' + HangSP[i].idSP + '"  class="Hang"><div class="Danhmuc" id="' + HangSP[i].idSP + '" >' + HangSP[i].tenSP + '</div></a>'
+                break;
+            }
+            if(j==(SanPham.length-1))
+            break;     
+        }
+    }
 }
 
 function innerSP(SP, soTrang) {
     for (i = 0; i < 8; i++) {
         if (i + 8 * soTrang < SP.length) {
             document.getElementById("SP" + (i + 1)).style.display = 'block';
-            document.getElementById("SP" + (i + 1)).innerHTML = `  <img id="img${i}"  src=${SP[i + 8 * soTrang].img} alt=""> <div><div class="name" id="name${i}" style="font-size: 120%; ">${SP[i + 8 * soTrang].Name}</div><div class="price" id="price${i}" style="font-size: 120%; ">${SP[i + 8 * soTrang].price}đ</div></div><input type="button" value="+">`
+            document.getElementById("SP" + (i + 1)).innerHTML = `  <img id="img${i}"  src=${SP[i + 8 * soTrang].img} alt=""> <div><div class="name" id="name${i}" style="font-size: 120%; ">${SP[i + 8 * soTrang].Name}</div><div class="price" id="price${i}" style="font-size: 120%; ">${SP[i + 8 * soTrang].price}$</div></div><input type="button" value="+">`
         }
         else
             document.getElementById("SP" + (i + 1)).style.display = 'none';
@@ -273,6 +291,14 @@ function LocSP(val = 0, SX = 0) {
             return e.type == Hang[1].split(/[=]/)[1];
         });
     }
+    var s=JSON.parse(localStorage.getItem('locgiasp'));
+    if(s.tugia!=="" && s.dengia!=="" || s.tugia > s.dengia) {
+        var tkt=parseInt(s.tugia);
+        var tkc=parseInt(s.dengia);
+        t = t.filter(function(e){
+            return parseInt(e.price)>=tkt && parseInt(e.price)<=tkc;
+        });
+    }
     console.log(t);
     innerSP(SapXep(sort, t), sotrang);
 }
@@ -309,15 +335,43 @@ function innerSoTrang() {
     var temp = SanPham.filter(function (e) {
         return e.type == Hang[1];
     });
+    var s=JSON.parse(localStorage.getItem('locgiasp'));
+    var tkt=parseInt(s.tugia);
+    var tkc=parseInt(s.dengia);
+    let t;
     if (Hang[1] == "Timkiem") {
         temp = Mangtsp;
-        max = Math.ceil(temp.length / 8);
+        if(s.tugia!=="" && s.dengia!=="" || s.tugia > s.dengia){
+            t = temp.filter(function(e) {
+            return parseInt(e.price)>=tkt && parseInt(e.price)<=tkc;
+            });
+            max = Math.ceil(t.length / 8);
+        }
+        else
+            max = Math.ceil(temp.length / 8);
     }
-    if (Hang[1] != undefined)
-        max = Math.ceil(temp.length / 8);
+    if (Hang[1] != undefined){
+        if(s.tugia!=="" && s.dengia!=="" || s.tugia > s.dengia){
+        t = temp.filter(function(e) {
+            return parseInt(e.price)>=tkt && parseInt(e.price)<=tkc;
+        });
+            max = Math.ceil(t.length / 8);
+        }
+        else max = Math.ceil(temp.length / 8);
+    }   
     else
-        max = Math.ceil(SanPham.length / 8);
+    {
+        if(s.tugia!=="" && s.dengia!=="" || s.tugia > s.dengia){
+            t = SanPham.filter(function(e) {
+            return parseInt(e.price)>=tkt && parseInt(e.price)<=tkc;
+            });
+            max = Math.ceil(t.length / 8);
+        }
+        else
+            max = Math.ceil(SanPham.length / 8);
+    }
     console.log(max);
+    if(max>1)
     for (i = 1; i <= max; i++) {
         document.getElementById("sotrang2").innerHTML += '<a href="#"><input class="soTrang" id="sT' + i + '" type="button" value="' + i + '" onclick="LocSP(this, ' + document.getElementsByClassName("loc").value + ')"></a>'
     }
@@ -344,7 +398,7 @@ function check() {
     if (t == 1) {
         if (document.getElementById("soluongSP").value <= 0) {
             document.getElementById("soluongSP").focus();
-            return;
+            return false;
         }
     }
 }
@@ -386,6 +440,31 @@ function Runtimkiemsp() {
     window.location.href = "?SP=Timkiem";
 }
 
+//Function lọc giá
+function Locgiasp(){
+    var tkgt = document.getElementById('tkt');
+    var tkgd = document.getElementById('tkc');
+    if(tkgt.value===""){
+        alert('Để trống giá từ ...');
+        tkt.focus();
+    }
+    else if(tkgd.value===""){
+        alert("Để trống giá đến");
+        tkc.focus();
+    }
+    else if(parseInt(tkgt.value)>parseInt(tkgd.value)){
+        alert("Mời nhập lại giá ");
+        tkt.focus();
+    }
+    else {
+        var locgia={tugia:tkgt.value,dengia:tkgd.value};
+        console.log(locgia);
+        localStorage.setItem('locgiasp',JSON.stringify(locgia));
+    }
+    LocSP(document.getElementsByClassName('soTrang').value ,document.getElementsByClassName('Loc').value);
+    document.getElementById('sotrang2').innerHTML="";
+    innerSoTrang();
+}
 
 //Function chưa sử dụng
 // function hienmenu()
@@ -413,7 +492,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "9",
-//     img: "./img/samsung-galaxy-z-fold-3.jpg",
+//     img: "/img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS9",
 //     type: "Samsung",
 //     price: 2000
@@ -421,7 +500,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "10",
-//     img: "./img/Minote10.jpg",
+//     img: "/img/Minote10.jpg",
 //     Name: "Xiao10",
 //     type: "Xiaomi",
 //     price: 3000
@@ -429,7 +508,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "11",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao11",
 //     type: "Xiaomi",
 //     price: 4000
@@ -437,7 +516,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "12",
-//     img: "./img/samsung-galaxy-z-fold-3.jpg",
+//     img: "/img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS12",
 //     type: "Samsung",
 //     price: 1000
@@ -445,7 +524,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "13",
-//     img: "./img/Mingote10.jpg",
+//     img: "/img/Mingote10.jpg",
 //     Name: "Xiao13",
 //     type: "Xiaomi",
 //     price: 500
@@ -453,21 +532,21 @@ function Runtimkiemsp() {
 // {
 
 //     id: "14",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao14",
 //     type: "Xiaomi",
 //     price: 200
 // },
 // {
 //     id: "15",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao15",
 //     type: "Xiaomi",
 //     price: 100
 // },
 // {
 //     id: "16",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "SS16",
 //     type: "Samsung",
 //     price: 4000
@@ -475,7 +554,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "17",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao11",
 //     type: "Xiaomi",
 //     price: 4000
@@ -483,7 +562,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "18",
-//     img: "./img/samsung-galaxy-z-fold-3.jpg",
+//     img: "/img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS12",
 //     type: "Samsung",
 //     price: 1000
@@ -491,7 +570,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "19",
-//     img: "./img/Mingote10.jpg",
+//     img: "/img/Mingote10.jpg",
 //     Name: "Xiao13",
 //     type: "Xiaomi",
 //     price: 500
@@ -499,21 +578,21 @@ function Runtimkiemsp() {
 // {
 
 //     id: "20",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao14",
 //     type: "Xiaomi",
 //     price: 200
 // },
 // {
 //     id: "21",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao15",
 //     type: "Xiaomi",
 //     price: 100
 // },
 // {
 //     id: "22",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "SS16",
 //     type: "Samsung",
 //     price: 4000
@@ -521,7 +600,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "23",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Điện thoại Xiaomi Mi 11 Lite",
 //     type: "Xiaomi",
 //     price: 9400
@@ -529,7 +608,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "24",
-//     img: "./img/samsung-galaxy-z-fold-3.jpg",
+//     img: "/img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS1",
 //     type: "Samsung",
 //     price: 1000
@@ -537,7 +616,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "25",
-//     img: "./img/Minote10.jpg",
+//     img: "/img/Minote10.jpg",
 //     Name: "Xiao2",
 //     type: "Xiaomi",
 //     price: 1000
@@ -545,7 +624,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "26",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao3",
 //     type: "Xiaomi",
 //     price: 9400
@@ -553,7 +632,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "27",
-//     img: "./img/samsung-galaxy-z-fold-3.jpg",
+//     img: "/img/samsung-galaxy-z-fold-3.jpg",
 //     Name: "SS4",
 //     type: "Samsung",
 //     price: 1000
@@ -561,7 +640,7 @@ function Runtimkiemsp() {
 // {
 
 //     id: "28",
-//     img: "./img/Minote10.jpg",
+//     img: "/img/Minote10.jpg",
 //     Name: "Xiao5",
 //     type: "Xiaomi",
 //     price: 1000
@@ -569,35 +648,35 @@ function Runtimkiemsp() {
 // {
 
 //     id: "29",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao6",
 //     type: "Xiaomi",
 //     price: 9400
 // },
 // {
 //     id: "30",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao7",
 //     type: "Xiaomi",
 //     price: 9500
 // },
 // {
 //     id: "31",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao8",
 //     type: "Xiaomi",
 //     price: 8300
 // },
 // {
 //     id: "32",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao8",
 //     type: "Xiaomi",
 //     price: 8300
 // },
 // {
 //     id: "33",
-//     img: "./img/xiaomi11.jpg",
+//     img: "/img/xiaomi11.jpg",
 //     Name: "Xiao8",
 //     type: "Xiaomi",
 //     price: 8300

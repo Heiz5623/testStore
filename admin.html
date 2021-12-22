@@ -21,16 +21,19 @@ and open the template in the editor.
                 <div id="top" style="display: flex; text-align: center;">
                     <a href="./index.html" style="margin: auto;" ><i class="fas fa-store  vitri_nutdangnhap" style="color: white;"></i></a>
                 </div>
+                
                 <div class="giaodien_admin" >
                 <div id="leftmenu">
+                    <div id="iconhtmenu" onclick="htmenu();"><i class="fas fa-ellipsis-h"></i></div>
                     <ul id="menu">
                         <li><a href="#" onclick="viewData();">Quản lý users</a></li>
                         <li><a href="#" onclick="InnerSP()">Quản lý sản phẩm</a></li>
                         <li><a href="#" onclick="showhoadon();">Quản lý đơn hàng</a></li>
-                        <li><a href="?TK">Thống kê</a></li>
+                        <li><a href="#" onclick="kkk();hhh(); ">Thống kê</a></li>
+                        <!-- <input type="button" value="all" onclick="hhh();"> -->
                     </ul>
                 </div>
-                <div id="content">
+                <div id="content">    
                     <!-- <div class="SP">
                         <div class="idSP">'+(i+1)+'</div>
                         <div class="SPimg"><img src="'+obj[i].img+'" alt="" /></div>
@@ -50,8 +53,9 @@ and open the template in the editor.
 
 
         
-                </div>              
+                </div>             
                 <div id="right">
+                    
                     <!-- <div id="FormThemSP" style="display:none ">
                         <p><label>ID Sản Phẩm: </label>
                             <input type="text" id="addID" value=""/></p>
@@ -66,7 +70,7 @@ and open the template in the editor.
                             <input type="button" value="Thêm" onclick="getIFSP()" id="addthem"/>
                         </div> -->
                 </div>
-                <div class="modal_login" style="display: none;">
+                <div class="modal_login" id="chitiethd" style="display: none;">
                     <div class="nen"></div>
                     <div class="giaodien">
                         <div onclick="alertClose();" class="btnclose"><i class="icon_close far fa-times-circle"></i></div>
@@ -79,7 +83,7 @@ and open the template in the editor.
                         <div id="chitietsp" style="padding-bottom: 2%;"></div>
                         <div id="tongtien_donhang" style="padding-bottom: 4%;"></div>
                         <div id="nutxacnhan"></div>
-                        <div style="padding-top: 7%;">HẾT</div>
+                        <div style="padding-top: 5%;">HẾT</div>
                         </div>
                 </div>
             </form>
